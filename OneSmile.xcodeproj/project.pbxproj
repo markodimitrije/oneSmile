@@ -7,23 +7,116 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A613CF3ED03C1DC91559CEB3 /* Pods_OneSmile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4141AEFE417E691BA6C45C /* Pods_OneSmile.framework */; };
+		AD01E1BD210F519B006CD06B /* CameraRollRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD01E1BC210F519B006CD06B /* CameraRollRequestManager.swift */; };
+		AD171017210F8B5D00DF7458 /* GlobalFuncsPhotoLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD171016210F8B5D00DF7458 /* GlobalFuncsPhotoLib.swift */; };
+		AD17101A21105CC600DF7458 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17101921105CC600DF7458 /* PhotoLibrary.swift */; };
+		AD27D4C9211ADCF8000D7380 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27D4C8211ADCF8000D7380 /* Globals.swift */; };
+		AD27D4CC211B3187000D7380 /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27D4CB211B3187000D7380 /* Managers.swift */; };
+		AD6E39B62112F94D0000F032 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E39B52112F94D0000F032 /* Model.swift */; };
+		AD6E39B921131B160000F032 /* PhotoLibraryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E39B821131B160000F032 /* PhotoLibraryHelper.swift */; };
+		AD6E39BB21131BE70000F032 /* Alert_MV_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E39BA21131BE70000F032 /* Alert_MV_VM.swift */; };
+		AD7BA420211DC469001CEB71 /* GlobalFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BA41F211DC469001CEB71 /* GlobalFuncs.swift */; };
+		AD7BA422211DC507001CEB71 /* LoadingWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BA421211DC507001CEB71 /* LoadingWebView.swift */; };
 		ADFAE1D3210CAA9300E08054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1D2210CAA9300E08054 /* AppDelegate.swift */; };
-		ADFAE1D5210CAA9300E08054 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1D4210CAA9300E08054 /* ViewController.swift */; };
+		ADFAE1D5210CAA9300E08054 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1D4210CAA9300E08054 /* MainVC.swift */; };
 		ADFAE1D8210CAA9300E08054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFAE1D6210CAA9300E08054 /* Main.storyboard */; };
 		ADFAE1DB210CAA9300E08054 /* OneSmile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1D9210CAA9300E08054 /* OneSmile.xcdatamodeld */; };
-		ADFAE1DD210CAA9500E08054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFAE1DC210CAA9500E08054 /* Assets.xcassets */; };
 		ADFAE1E0210CAA9500E08054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFAE1DE210CAA9500E08054 /* LaunchScreen.storyboard */; };
+		ADFAE1E8210CBFFA00E08054 /* SetPeriodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1E7210CBFFA00E08054 /* SetPeriodVC.swift */; };
+		ADFAE1EA210CC63600E08054 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1E9210CC63600E08054 /* WebViewVC.swift */; };
+		ADFAE1EC210CC66400E08054 /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1EB210CC66400E08054 /* GalleryVC.swift */; };
+		ADFAE1EE210CCCA200E08054 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1ED210CCCA200E08054 /* Constants.swift */; };
+		ADFAE1F0210CCEE700E08054 /* TeethAssetsDummy.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFAE1EF210CCEE700E08054 /* TeethAssetsDummy.xcassets */; };
+		ADFAE1F5210CCF7000E08054 /* Gallery_MV_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1F4210CCF7000E08054 /* Gallery_MV_VM.swift */; };
+		ADFAE1F8210CD2BA00E08054 /* GalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1F7210CD2BA00E08054 /* GalleryPhotoCell.swift */; };
+		ADFAE1FA210CD74D00E08054 /* ZoomPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE1F9210CD74D00E08054 /* ZoomPhotoVC.swift */; };
+		ADFAE1FF210CEF4C00E08054 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFAE1FE210CEF4C00E08054 /* Media.xcassets */; };
+		ADFAE203210EFB7200E08054 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE202210EFB7200E08054 /* Protocols.swift */; };
+		ADFAE205210EFBAF00E08054 /* Notification_MV_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE204210EFBAF00E08054 /* Notification_MV_VM.swift */; };
+		ADFAE208210F067800E08054 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE207210F067800E08054 /* Extensions.swift */; };
+		ADFAE20B210F07D500E08054 /* Utilities_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE20A210F07D500E08054 /* Utilities_UI.swift */; };
+		ADFAE20D210F0A7600E08054 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADFAE20C210F0A7500E08054 /* Localizable.strings */; };
+		ADFAE233210F2DA900E08054 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFAE232210F2DA900E08054 /* UserNotifications.framework */; };
+		ADFAE235210F2DA900E08054 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFAE234210F2DA900E08054 /* UserNotificationsUI.framework */; };
+		ADFAE238210F2DA900E08054 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFAE237210F2DA900E08054 /* NotificationViewController.swift */; };
+		ADFAE23B210F2DA900E08054 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFAE239210F2DA900E08054 /* MainInterface.storyboard */; };
+		ADFAE23F210F2DA900E08054 /* OneSmileNotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADFAE230210F2DA900E08054 /* OneSmileNotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADFAE247210F364900E08054 /* oneSmile.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFAE246210F364900E08054 /* oneSmile.png */; };
+		ADFAE248210F364900E08054 /* oneSmile.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFAE246210F364900E08054 /* oneSmile.png */; };
+		EE5AE57C5D5AABD4C1EF8B33 /* Pods_OneSmileNotificationContent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD921FC097BDD70B59DFE84 /* Pods_OneSmileNotificationContent.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ADFAE23D210F2DA900E08054 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADFAE1C7210CAA9300E08054 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADFAE22F210F2DA900E08054;
+			remoteInfo = OneSmileNotificationContent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADFAE243210F2DA900E08054 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ADFAE23F210F2DA900E08054 /* OneSmileNotificationContent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4E4791F68E603973712AF7BF /* Pods-OneSmile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSmile.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSmile/Pods-OneSmile.release.xcconfig"; sourceTree = "<group>"; };
+		870448BC5E24827C15730E1B /* Pods-OneSmile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSmile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSmile/Pods-OneSmile.debug.xcconfig"; sourceTree = "<group>"; };
+		9BC77FD5A97272EE9EECFBD2 /* Pods-OneSmileNotificationContent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSmileNotificationContent.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSmileNotificationContent/Pods-OneSmileNotificationContent.release.xcconfig"; sourceTree = "<group>"; };
+		A5F19C3D77ECAED5B3F9C4BF /* Pods-OneSmileNotificationContent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSmileNotificationContent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSmileNotificationContent/Pods-OneSmileNotificationContent.debug.xcconfig"; sourceTree = "<group>"; };
+		AD01E1BC210F519B006CD06B /* CameraRollRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollRequestManager.swift; sourceTree = "<group>"; };
+		AD171016210F8B5D00DF7458 /* GlobalFuncsPhotoLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFuncsPhotoLib.swift; sourceTree = "<group>"; };
+		AD17101921105CC600DF7458 /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
+		AD27D4C8211ADCF8000D7380 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		AD27D4CB211B3187000D7380 /* Managers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
+		AD6E39B52112F94D0000F032 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AD6E39B821131B160000F032 /* PhotoLibraryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryHelper.swift; sourceTree = "<group>"; };
+		AD6E39BA21131BE70000F032 /* Alert_MV_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_MV_VM.swift; sourceTree = "<group>"; };
+		AD7BA41F211DC469001CEB71 /* GlobalFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFuncs.swift; sourceTree = "<group>"; };
+		AD7BA421211DC507001CEB71 /* LoadingWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingWebView.swift; sourceTree = "<group>"; };
 		ADFAE1CF210CAA9300E08054 /* OneSmile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSmile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFAE1D2210CAA9300E08054 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADFAE1D4210CAA9300E08054 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADFAE1D4210CAA9300E08054 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		ADFAE1D7210CAA9300E08054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADFAE1DA210CAA9300E08054 /* OneSmile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OneSmile.xcdatamodel; sourceTree = "<group>"; };
-		ADFAE1DC210CAA9500E08054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADFAE1DF210CAA9500E08054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADFAE1E1210CAA9500E08054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFAE1E7210CBFFA00E08054 /* SetPeriodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPeriodVC.swift; sourceTree = "<group>"; };
+		ADFAE1E9210CC63600E08054 /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		ADFAE1EB210CC66400E08054 /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
+		ADFAE1ED210CCCA200E08054 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ADFAE1EF210CCEE700E08054 /* TeethAssetsDummy.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TeethAssetsDummy.xcassets; sourceTree = "<group>"; };
+		ADFAE1F4210CCF7000E08054 /* Gallery_MV_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery_MV_VM.swift; sourceTree = "<group>"; };
+		ADFAE1F7210CD2BA00E08054 /* GalleryPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPhotoCell.swift; sourceTree = "<group>"; };
+		ADFAE1F9210CD74D00E08054 /* ZoomPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomPhotoVC.swift; sourceTree = "<group>"; };
+		ADFAE1FE210CEF4C00E08054 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		ADFAE202210EFB7200E08054 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		ADFAE204210EFBAF00E08054 /* Notification_MV_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification_MV_VM.swift; sourceTree = "<group>"; };
+		ADFAE207210F067800E08054 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ADFAE20A210F07D500E08054 /* Utilities_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities_UI.swift; sourceTree = "<group>"; };
+		ADFAE20C210F0A7500E08054 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		ADFAE230210F2DA900E08054 /* OneSmileNotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSmileNotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFAE232210F2DA900E08054 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		ADFAE234210F2DA900E08054 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		ADFAE237210F2DA900E08054 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		ADFAE23A210F2DA900E08054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		ADFAE23C210F2DA900E08054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFAE246210F364900E08054 /* oneSmile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oneSmile.png; sourceTree = "<group>"; };
+		ADFAE24B210F384400E08054 /* OneSmileNotificationContent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSmileNotificationContent.entitlements; sourceTree = "<group>"; };
+		AF4141AEFE417E691BA6C45C /* Pods_OneSmile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSmile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD921FC097BDD70B59DFE84 /* Pods_OneSmileNotificationContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSmileNotificationContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +124,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A613CF3ED03C1DC91559CEB3 /* Pods_OneSmile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFAE22D210F2DA900E08054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFAE235210F2DA900E08054 /* UserNotificationsUI.framework in Frameworks */,
+				ADFAE233210F2DA900E08054 /* UserNotifications.framework in Frameworks */,
+				EE5AE57C5D5AABD4C1EF8B33 /* Pods_OneSmileNotificationContent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69957DED9D45E6C9186B48BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				870448BC5E24827C15730E1B /* Pods-OneSmile.debug.xcconfig */,
+				4E4791F68E603973712AF7BF /* Pods-OneSmile.release.xcconfig */,
+				A5F19C3D77ECAED5B3F9C4BF /* Pods-OneSmileNotificationContent.debug.xcconfig */,
+				9BC77FD5A97272EE9EECFBD2 /* Pods-OneSmileNotificationContent.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD01E1BB210F517C006CD06B /* MyClasses */ = {
+			isa = PBXGroup;
+			children = (
+				AD01E1BC210F519B006CD06B /* CameraRollRequestManager.swift */,
+				AD27D4CB211B3187000D7380 /* Managers.swift */,
+				AD7BA421211DC507001CEB71 /* LoadingWebView.swift */,
+			);
+			path = MyClasses;
+			sourceTree = "<group>";
+		};
+		AD17101821105CBA00DF7458 /* CopyClasses */ = {
+			isa = PBXGroup;
+			children = (
+				AD17101921105CC600DF7458 /* PhotoLibrary.swift */,
+			);
+			path = CopyClasses;
+			sourceTree = "<group>";
+		};
+		AD27D4C7211ADCEE000D7380 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				AD171016210F8B5D00DF7458 /* GlobalFuncsPhotoLib.swift */,
+				AD7BA41F211DC469001CEB71 /* GlobalFuncs.swift */,
+				AD27D4C8211ADCF8000D7380 /* Globals.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		AD6E39B42112F9350000F032 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD6E39B52112F94D0000F032 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD6E39B721131B030000F032 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AD6E39B821131B160000F032 /* PhotoLibraryHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		ADFAE1C6210CAA9300E08054 = {
 			isa = PBXGroup;
 			children = (
 				ADFAE1D1210CAA9300E08054 /* OneSmile */,
+				ADFAE236210F2DA900E08054 /* OneSmileNotificationContent */,
+				ADFAE231210F2DA900E08054 /* Frameworks */,
 				ADFAE1D0210CAA9300E08054 /* Products */,
+				69957DED9D45E6C9186B48BC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				ADFAE1CF210CAA9300E08054 /* OneSmile.app */,
+				ADFAE230210F2DA900E08054 /* OneSmileNotificationContent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +219,129 @@
 		ADFAE1D1210CAA9300E08054 /* OneSmile */ = {
 			isa = PBXGroup;
 			children = (
-				ADFAE1D2210CAA9300E08054 /* AppDelegate.swift */,
-				ADFAE1D4210CAA9300E08054 /* ViewController.swift */,
-				ADFAE1D6210CAA9300E08054 /* Main.storyboard */,
-				ADFAE1DC210CAA9500E08054 /* Assets.xcassets */,
-				ADFAE1DE210CAA9500E08054 /* LaunchScreen.storyboard */,
+				AD27D4C7211ADCEE000D7380 /* Global */,
+				AD6E39B721131B030000F032 /* Helpers */,
+				AD6E39B42112F9350000F032 /* Model */,
+				AD17101821105CBA00DF7458 /* CopyClasses */,
+				AD01E1BB210F517C006CD06B /* MyClasses */,
+				ADFAE244210F362F00E08054 /* Assets */,
+				ADFAE209210F07C400E08054 /* Utilities_UI */,
+				ADFAE206210F066700E08054 /* Extensions */,
+				ADFAE201210EFB5A00E08054 /* Protocols */,
 				ADFAE1E1210CAA9500E08054 /* Info.plist */,
+				ADFAE1F6210CD28F00E08054 /* Views */,
+				ADFAE1F3210CCF5B00E08054 /* MV_VM */,
+				ADFAE1F2210CCF3200E08054 /* AppDel, Plist.... */,
+				ADFAE1F1210CCF1600E08054 /* VCs */,
+				ADFAE1EF210CCEE700E08054 /* TeethAssetsDummy.xcassets */,
+				ADFAE1ED210CCCA200E08054 /* Constants.swift */,
+				ADFAE1D6210CAA9300E08054 /* Main.storyboard */,
 				ADFAE1D9210CAA9300E08054 /* OneSmile.xcdatamodeld */,
+				ADFAE20C210F0A7500E08054 /* Localizable.strings */,
 			);
 			path = OneSmile;
+			sourceTree = "<group>";
+		};
+		ADFAE1F1210CCF1600E08054 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE1E7210CBFFA00E08054 /* SetPeriodVC.swift */,
+				ADFAE1EB210CC66400E08054 /* GalleryVC.swift */,
+				ADFAE1D4210CAA9300E08054 /* MainVC.swift */,
+				ADFAE1F9210CD74D00E08054 /* ZoomPhotoVC.swift */,
+				ADFAE1E9210CC63600E08054 /* WebViewVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		ADFAE1F2210CCF3200E08054 /* AppDel, Plist.... */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE1D2210CAA9300E08054 /* AppDelegate.swift */,
+				ADFAE1DE210CAA9500E08054 /* LaunchScreen.storyboard */,
+				ADFAE1FE210CEF4C00E08054 /* Media.xcassets */,
+			);
+			path = "AppDel, Plist....";
+			sourceTree = "<group>";
+		};
+		ADFAE1F3210CCF5B00E08054 /* MV_VM */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE1F4210CCF7000E08054 /* Gallery_MV_VM.swift */,
+				ADFAE204210EFBAF00E08054 /* Notification_MV_VM.swift */,
+				AD6E39BA21131BE70000F032 /* Alert_MV_VM.swift */,
+			);
+			path = MV_VM;
+			sourceTree = "<group>";
+		};
+		ADFAE1F6210CD28F00E08054 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE1F7210CD2BA00E08054 /* GalleryPhotoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADFAE201210EFB5A00E08054 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE202210EFB7200E08054 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ADFAE206210F066700E08054 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE207210F067800E08054 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ADFAE209210F07C400E08054 /* Utilities_UI */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE20A210F07D500E08054 /* Utilities_UI.swift */,
+			);
+			path = Utilities_UI;
+			sourceTree = "<group>";
+		};
+		ADFAE231210F2DA900E08054 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE232210F2DA900E08054 /* UserNotifications.framework */,
+				ADFAE234210F2DA900E08054 /* UserNotificationsUI.framework */,
+				AF4141AEFE417E691BA6C45C /* Pods_OneSmile.framework */,
+				CAD921FC097BDD70B59DFE84 /* Pods_OneSmileNotificationContent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADFAE236210F2DA900E08054 /* OneSmileNotificationContent */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE24B210F384400E08054 /* OneSmileNotificationContent.entitlements */,
+				ADFAE237210F2DA900E08054 /* NotificationViewController.swift */,
+				ADFAE239210F2DA900E08054 /* MainInterface.storyboard */,
+				ADFAE23C210F2DA900E08054 /* Info.plist */,
+			);
+			path = OneSmileNotificationContent;
+			sourceTree = "<group>";
+		};
+		ADFAE244210F362F00E08054 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE245210F363B00E08054 /* PNG */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		ADFAE245210F363B00E08054 /* PNG */ = {
+			isa = PBXGroup;
+			children = (
+				ADFAE246210F364900E08054 /* oneSmile.png */,
+			);
+			path = PNG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,18 +351,40 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADFAE1E4210CAA9500E08054 /* Build configuration list for PBXNativeTarget "OneSmile" */;
 			buildPhases = (
+				0B570B367C5FFC5F5407383C /* [CP] Check Pods Manifest.lock */,
 				ADFAE1CB210CAA9300E08054 /* Sources */,
 				ADFAE1CC210CAA9300E08054 /* Frameworks */,
 				ADFAE1CD210CAA9300E08054 /* Resources */,
+				ADFAE243210F2DA900E08054 /* Embed App Extensions */,
+				C426CFC84A64A6F1342947C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ADFAE23E210F2DA900E08054 /* PBXTargetDependency */,
 			);
 			name = OneSmile;
 			productName = OneSmile;
 			productReference = ADFAE1CF210CAA9300E08054 /* OneSmile.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ADFAE22F210F2DA900E08054 /* OneSmileNotificationContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFAE242210F2DA900E08054 /* Build configuration list for PBXNativeTarget "OneSmileNotificationContent" */;
+			buildPhases = (
+				FFFAB7C9ECA80C44EAF97DA8 /* [CP] Check Pods Manifest.lock */,
+				ADFAE22C210F2DA900E08054 /* Sources */,
+				ADFAE22D210F2DA900E08054 /* Frameworks */,
+				ADFAE22E210F2DA900E08054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSmileNotificationContent;
+			productName = OneSmileNotificationContent;
+			productReference = ADFAE230210F2DA900E08054 /* OneSmileNotificationContent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +398,34 @@
 				TargetAttributes = {
 					ADFAE1CE210CAA9300E08054 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					ADFAE22F210F2DA900E08054 = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+							com.apple.VPNLite = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -116,6 +443,7 @@
 			projectRoot = "";
 			targets = (
 				ADFAE1CE210CAA9300E08054 /* OneSmile */,
+				ADFAE22F210F2DA900E08054 /* OneSmileNotificationContent */,
 			);
 		};
 /* End PBXProject section */
@@ -125,26 +453,132 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFAE20D210F0A7600E08054 /* Localizable.strings in Resources */,
+				ADFAE247210F364900E08054 /* oneSmile.png in Resources */,
 				ADFAE1E0210CAA9500E08054 /* LaunchScreen.storyboard in Resources */,
-				ADFAE1DD210CAA9500E08054 /* Assets.xcassets in Resources */,
+				ADFAE1F0210CCEE700E08054 /* TeethAssetsDummy.xcassets in Resources */,
+				ADFAE1FF210CEF4C00E08054 /* Media.xcassets in Resources */,
 				ADFAE1D8210CAA9300E08054 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADFAE22E210F2DA900E08054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFAE23B210F2DA900E08054 /* MainInterface.storyboard in Resources */,
+				ADFAE248210F364900E08054 /* oneSmile.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B570B367C5FFC5F5407383C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSmile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C426CFC84A64A6F1342947C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OneSmile/Pods-OneSmile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSmile/Pods-OneSmile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFFAB7C9ECA80C44EAF97DA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSmileNotificationContent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ADFAE1CB210CAA9300E08054 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADFAE1D5210CAA9300E08054 /* ViewController.swift in Sources */,
+				ADFAE20B210F07D500E08054 /* Utilities_UI.swift in Sources */,
+				AD17101A21105CC600DF7458 /* PhotoLibrary.swift in Sources */,
+				ADFAE1E8210CBFFA00E08054 /* SetPeriodVC.swift in Sources */,
+				ADFAE1F8210CD2BA00E08054 /* GalleryPhotoCell.swift in Sources */,
+				ADFAE1FA210CD74D00E08054 /* ZoomPhotoVC.swift in Sources */,
+				AD7BA420211DC469001CEB71 /* GlobalFuncs.swift in Sources */,
+				AD7BA422211DC507001CEB71 /* LoadingWebView.swift in Sources */,
+				AD27D4C9211ADCF8000D7380 /* Globals.swift in Sources */,
+				ADFAE203210EFB7200E08054 /* Protocols.swift in Sources */,
+				ADFAE1EC210CC66400E08054 /* GalleryVC.swift in Sources */,
+				ADFAE1F5210CCF7000E08054 /* Gallery_MV_VM.swift in Sources */,
+				ADFAE205210EFBAF00E08054 /* Notification_MV_VM.swift in Sources */,
+				AD6E39B62112F94D0000F032 /* Model.swift in Sources */,
+				ADFAE1D5210CAA9300E08054 /* MainVC.swift in Sources */,
+				ADFAE208210F067800E08054 /* Extensions.swift in Sources */,
+				ADFAE1EA210CC63600E08054 /* WebViewVC.swift in Sources */,
+				ADFAE1EE210CCCA200E08054 /* Constants.swift in Sources */,
+				AD171017210F8B5D00DF7458 /* GlobalFuncsPhotoLib.swift in Sources */,
+				AD6E39B921131B160000F032 /* PhotoLibraryHelper.swift in Sources */,
+				AD6E39BB21131BE70000F032 /* Alert_MV_VM.swift in Sources */,
+				AD01E1BD210F519B006CD06B /* CameraRollRequestManager.swift in Sources */,
+				AD27D4CC211B3187000D7380 /* Managers.swift in Sources */,
 				ADFAE1DB210CAA9300E08054 /* OneSmile.xcdatamodeld in Sources */,
 				ADFAE1D3210CAA9300E08054 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADFAE22C210F2DA900E08054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFAE238210F2DA900E08054 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADFAE23E210F2DA900E08054 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADFAE22F210F2DA900E08054 /* OneSmileNotificationContent */;
+			targetProxy = ADFAE23D210F2DA900E08054 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ADFAE1D6210CAA9300E08054 /* Main.storyboard */ = {
@@ -161,6 +595,14 @@
 				ADFAE1DF210CAA9500E08054 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ADFAE239210F2DA900E08054 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFAE23A210F2DA900E08054 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,7 +724,9 @@
 		};
 		ADFAE1E5210CAA9500E08054 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870448BC5E24827C15730E1B /* Pods-OneSmile.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S26YPRY864;
@@ -300,7 +744,9 @@
 		};
 		ADFAE1E6210CAA9500E08054 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E4791F68E603973712AF7BF /* Pods-OneSmile.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S26YPRY864;
@@ -311,6 +757,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dkrtalic.OneSmile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADFAE240210F2DA900E08054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F19C3D77ECAED5B3F9C4BF /* Pods-OneSmileNotificationContent.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S26YPRY864;
+				INFOPLIST_FILE = OneSmileNotificationContent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dkrtalic.OneSmile.OneSmileNotificationContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADFAE241210F2DA900E08054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC77FD5A97272EE9EECFBD2 /* Pods-OneSmileNotificationContent.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S26YPRY864;
+				INFOPLIST_FILE = OneSmileNotificationContent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dkrtalic.OneSmile.OneSmileNotificationContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +819,15 @@
 			buildConfigurations = (
 				ADFAE1E5210CAA9500E08054 /* Debug */,
 				ADFAE1E6210CAA9500E08054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFAE242210F2DA900E08054 /* Build configuration list for PBXNativeTarget "OneSmileNotificationContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFAE240210F2DA900E08054 /* Debug */,
+				ADFAE241210F2DA900E08054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

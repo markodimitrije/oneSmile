@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in OneSmilePhotoLibrary.setPhoto(at:completion:):PhotoLibrary.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "info[&quot;PHImageFileURLKey&quot;] as? String">
+            </PersistentString>
+            <PersistentString
+               value = "adr">
+            </PersistentString>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+            <PersistentString
+               value = "info.keys">
+            </PersistentString>
+            <PersistentString
+               value = "info[&quot;PHImageFileURLKey&quot;] as? URL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainVC.countTime():MainVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Date.now">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ZoomPhotoVC.photoLibraryDidChange(_:):ZoomPhotoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastReadAsset.isFavorite">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ZoomPhotoVC.configureTabBarView():ZoomPhotoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tabBarView.items?.first">
+            </PersistentString>
+            <PersistentString
+               value = "item.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PhotoLibraryHelper.oneSmileFolderPhotosCount():PhotoLibraryHelper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "OneSmilePhotoLibrary().count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WebViewVC.placeSpinner():WebViewVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "spinerPresenterView">
+            </PersistentString>
+            <PersistentString
+               value = "spinner.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ZoomPhotoVC.tapIsDetected(recognizer:):ZoomPhotoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "recognizer.numberOfTouches">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.userNotificationCenter(_:didReceive:withCompletionHandler:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.actionIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "doesFolderAlreadyExists(name:):GlobalFuncs.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "fetchResult.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GalleryVC.collectionView(_:cellForItemAt:):GalleryVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataProvider.photoLibrary.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "lastReadAsset.didset:Globals.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lastReadAsset.isFavorite">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ZoomPhotoVC.image.setter:ZoomPhotoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GalleryVC.photoLibraryDidChange(_:):GalleryVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataProvider.photoLibrary.lastReadAsset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

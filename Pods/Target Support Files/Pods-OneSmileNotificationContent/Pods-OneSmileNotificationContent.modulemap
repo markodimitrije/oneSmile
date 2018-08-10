@@ -1,0 +1,6 @@
+framework module Pods_OneSmileNotificationContent {
+  umbrella header "Pods-OneSmileNotificationContent-umbrella.h"
+
+  export *
+  module * { export * }
+}

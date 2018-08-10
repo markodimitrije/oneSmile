@@ -9,14 +9,23 @@
 import UIKit
 import CoreData
 
+import UserNotifications
+import UserNotificationsUI
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print("didFinishLaunchingWithOptions is called")
+        
+        TimePeriodManager().appDidFinishedLaunching() // javi odg. MV_VM-u
+        
+        configureUserNotifications()
+        
         return true
     }
 
@@ -32,6 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        
+        print("AppDelegate.applicationWillEnterForeground is called")
+        
+        TimePeriodManager().applicationWillEnterForeground() // javi odg. MV_VM-u
+        
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -87,7 +101,73 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+        
+        
+        
+    }
+    
+}
+
+
+
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    
+    func configureUserNotifications() { // zove te sopstveni didFinishLaunching
+        
+        func requestAuthorization() {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+                if granted {
+                    // all good...
+                } else {
+                    print(error?.localizedDescription ?? "")
+                }
+            }
+        }
+        
+        func configureNotificationCategory() {
+            
+            let dismissAction = UNNotificationAction(identifier: "dismiss", title: "Dismiss", options: [])
+            
+            let category = UNNotificationCategory.init(identifier: newOneSmileCategoryName, actions: [dismissAction], intentIdentifiers: [], options: [])
+            
+            UNUserNotificationCenter.current().setNotificationCategories([category])
+            
+        }
+        
+        // WORK:
+        
+        UNUserNotificationCenter.current().delegate = self
+        configureNotificationCategory()
+        requestAuthorization()
+        
     }
 
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        print("userNotificationCenter.willPresent = \(notification)")
+        
+        NotificationCenter.default.post(name: userNotificationReceivedNotificationName, object: .none)
+
+        completionHandler(.alert)
+        
+    }
+    
+    // ovo se okida ako tap na notif dok je u App
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        print("userNotificationCenter.response = \(response.actionIdentifier)")
+        
+        CameraRollRequestManager().didReceiveResponse(response)
+        
+        completionHandler()
+        
+    }
+    
 }
+
+let userNotificationReceivedNotificationName = Notification.Name("com.dkrtalic.OneSmile.userNotificationReceived")
+let newOneSmileCategoryName = "newOneSmile"
+
+
 

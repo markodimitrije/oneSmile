@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OneSmile.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>89753AE72D5F4441F5B3EC892BDF7AA390D60F94</string>
+				<key>dateExpires</key>
+				<string>25/07/2019</string>
+				<key>type</key>
+				<string>iOS Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>89753AE72D5F4441F5B3EC892BDF7AA390D60F94</string>
+						<key>dateExpires</key>
+						<string>25/07/2019</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>entitlements</key>
+					<dict>
+						<key>application-identifier</key>
+						<string>S26YPRY864.com.dkrtalic.OneSmile.OneSmileNotificationContent</string>
+						<key>com.apple.developer.team-identifier</key>
+						<string>S26YPRY864</string>
+						<key>get-task-allow</key>
+						<true/>
+						<key>keychain-access-groups</key>
+						<array>
+							<string>S26YPRY864.com.dkrtalic.OneSmile.OneSmileNotificationContent</string>
+						</array>
+					</dict>
+					<key>name</key>
+					<string>OneSmileNotificationContent.appex</string>
+					<key>profile</key>
+					<dict>
+						<key>UUID</key>
+						<string>7bf94c62-8bb5-4f90-94cf-3acfbd8772dd</string>
+						<key>name</key>
+						<string>iOS Team Provisioning Profile: com.dkrtalic.OneSmile.OneSmileNotificationContent</string>
+					</dict>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S26YPRY864</string>
+						<key>name</key>
+						<string>Dragan Krtalic</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>S26YPRY864.com.dkrtalic.OneSmile</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>S26YPRY864</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>S26YPRY864.com.dkrtalic.OneSmile</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>OneSmile.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>14331791-c9f2-4121-bbac-aba51fa25410</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>S26YPRY864</string>
+				<key>name</key>
+				<string>Dragan Krtalic</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  OneSmile
+
+  Created by Marko Dimitrijevic on 30/07/2018.
+  Copyright © 2018 Marko Dimitrijevic. All rights reserved.
+*/
+
+Strings.Confirm = " CONFIRM ";
+
+Strings.Alert.GalleryEmptyTakePhoto.title = "YOUR FIRST SMILE";
+Strings.Alert.GalleryEmptyTakePhoto.message = "Please choose OK to take first photo on your journey to perfect smile";
+Strings.Alert.GalleryEmptyTakePhoto.ok = "OK";
