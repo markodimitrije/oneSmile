@@ -23,9 +23,7 @@ class WebViewVC: UIViewController {
         
         guard let url = URL.init(string: Constants.Urls.oneSmileWebSiteAddress) else {return}
         
-        
-        
-        webView.loadWebView(url: url)
+        webView?.loadWebView(url: url)
         
     }
 

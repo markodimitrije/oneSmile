@@ -13,9 +13,7 @@ class MainVC: UIViewController {
     // MARK: outlets and actions
     
     @IBOutlet weak var countLbl: UILabel!
-    
     @IBOutlet weak var containerView: UIView!
-    
     @IBOutlet weak var tabBarView: UITabBar!
     
     @IBAction func gearBtnTapped(_ sender: UIButton) {
@@ -32,10 +30,17 @@ class MainVC: UIViewController {
     
     var tpm = TimePeriodManager()
     
+    var webViewVC: WebViewVC? = mainStoryboard.instantiateViewController(withIdentifier: "WebViewVC") as? WebViewVC
+    var galleryVC: GalleryVC? = mainStoryboard.instantiateViewController(withIdentifier: "GalleryVC") as? GalleryVC
     
     // MARK:- Life cycle
     
     override func viewDidLoad() { super.viewDidLoad()
+        
+        //.. load my properties...
+        
+        webViewVC = mainStoryboard.instantiateViewController(withIdentifier: "WebViewVC") as? WebViewVC
+        galleryVC = mainStoryboard.instantiateViewController(withIdentifier: "GalleryVC") as? GalleryVC
         
         userWantsToSeeGallery() // inicijalno mu prikazi galeriju temp off
         
@@ -82,20 +87,11 @@ class MainVC: UIViewController {
     
     // MARK:- process responds to tabBarView
     
-    private func userWantsToSeeWebContent() {
+    private func userWantsToSeeWebContent() {  // svoj var
         
-        guard let webViewVC = mainStoryboard.instantiateViewController(withIdentifier: "WebViewVC") as? WebViewVC else { return }
-        
-        let _ = containerView.subviews.map {$0.removeFromSuperview()}
-        let _ = self.childViewControllers.map {$0.removeFromParentViewController()}
-        
-        webViewVC.view.frame = containerView.bounds
-        
-        containerView.addSubview(webViewVC.view)
-        
-        self.addChildViewController(webViewVC)
-        
-        webViewVC.didMove(toParentViewController: self)
+        guard let webViewVC = webViewVC else { return }
+
+        removePreviousVCandPlaceNewOne(fromContainerView: containerView, vc: webViewVC)
         
         navigationItem.title = "WEBSITE"
         
@@ -103,29 +99,37 @@ class MainVC: UIViewController {
     
     private func userWantsToSeeGallery() {
         
-        guard let galleryVC = mainStoryboard.instantiateViewController(withIdentifier: "GalleryVC") as? GalleryVC else { return }
-        
-        let _ = containerView.subviews.map {$0.removeFromSuperview()}
-        let _ = self.childViewControllers.map {$0.removeFromParentViewController()}
-        
-        galleryVC.view.frame = containerView.bounds
-        
-        self.addChildViewController(galleryVC)
-        
-        containerView.addSubview(galleryVC.view)
-        
-        galleryVC.didMove(toParentViewController: self)
+        guard let galleryVC = galleryVC else { return } // svoj var
+
+        removePreviousVCandPlaceNewOne(fromContainerView: containerView,vc: galleryVC)
         
         navigationItem.title = "GALLERY"
+        
+        removeSpinner() // u slucaju da ti je slucajno ostao na webView....
         
     }
     
     
     
+    // helper za userWantsTo.... embeded .... moze da se nalazi bilo gde ! cak i kao global...
+    
+    private func removePreviousVCandPlaceNewOne(fromContainerView containerView: UIView, vc: UIViewController) {
+        
+        let _ = containerView.subviews.map {$0.removeFromSuperview()}
+        let _ = self.childViewControllers.map {$0.removeFromParentViewController()}
+        
+        vc.view.frame = containerView.bounds
+        
+        self.addChildViewController(vc)
+        
+        containerView.addSubview(vc.view)
+        
+        vc.didMove(toParentViewController: self)
+        
+    }
+    
     
     // MARK:- timer and count label
-    
-    
     
     private func createTimer() {
         
@@ -199,8 +203,6 @@ class MainVC: UIViewController {
     
 }
 
-
-
 extension MainVC: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         
@@ -213,8 +215,6 @@ extension MainVC: UITabBarDelegate {
         }
     }
 }
-
-let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
 
 
 

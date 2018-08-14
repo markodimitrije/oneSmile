@@ -31,11 +31,13 @@ extension LoadingWebView: UIWebViewDelegate {
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
 //        print("didFailLoadWithError .. implement me . . .. . ")
         removeSpinner()
+        
     }
 }
 
 class OneSmileLoadingWebView: LoadingWebView {
     override func loadWebView(url: URL?) {
+        
         guard let url = url else {return}
         
         showSpinner()

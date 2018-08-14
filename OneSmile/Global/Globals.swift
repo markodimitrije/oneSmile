@@ -22,3 +22,5 @@ var lastReadAssetUrl: URL?
 var isFavourite: Bool? // ovaj var imam iz razloga sto ne mogu da uradim save od lastReadAsset pri change favourite (sranje...)
 
 let spinerPresenterView: UIView? = UIApplication.shared.windows.first?.rootViewController?.view
+
+let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
